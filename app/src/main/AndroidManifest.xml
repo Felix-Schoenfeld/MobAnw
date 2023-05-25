@@ -13,6 +13,18 @@
         android:theme="@style/Theme.CI_Application"
         tools:targetApi="31">
         <activity
+            android:name=".CIDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CIListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CICreationActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
