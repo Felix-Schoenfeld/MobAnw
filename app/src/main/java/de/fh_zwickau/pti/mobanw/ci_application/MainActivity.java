@@ -9,7 +9,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
+
 public class MainActivity extends AppCompatActivity {
+
+    // Liste von allen CIs, wird allen Aktivitäten mitgegeben.
+    private ArrayList<CI> globalCIList = new ArrayList<>();
+    // Liste von Lieblings-CIs
+    private ArrayList<CI> favoriteCIList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CIListActivity.class);
+                intent.putExtra("globalCIList", globalCIList);
                 startActivity(intent);
             }
         });
@@ -32,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FavListActivity.class);
+                intent.putExtra("globalCIList", globalCIList);
+                intent.putExtra("favoriteCIList", favoriteCIList);
                 startActivity(intent);
             }
         });
@@ -42,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CICreationActivity.class);
+                intent.putExtra("globalCIList", globalCIList);
                 startActivity(intent);
             }
         });
