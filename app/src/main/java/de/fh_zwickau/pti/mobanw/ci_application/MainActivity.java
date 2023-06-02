@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Fav List
         Button buttonFavs = (Button) findViewById(R.id.buttonFavs);
-        buttonCIList.setOnClickListener(new View.OnClickListener() {
+        buttonFavs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FavListActivity.class);
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         // CI Creation
         Button buttonCreateCI = (Button) findViewById(R.id.buttonCreateCI);
-        buttonCIList.setOnClickListener(new View.OnClickListener() {
+        buttonCreateCI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CICreationActivity.class);
