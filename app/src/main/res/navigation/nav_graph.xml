@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="de.fh_zwickau.pti.mobanw.ci_application.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" >
+        android:label="first_fragment_label"
+        tools:layout="@layout/fragment_first">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -18,8 +18,8 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="de.fh_zwickau.pti.mobanw.ci_application.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second" >
+        android:label="second_fragment_label"
+        tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
