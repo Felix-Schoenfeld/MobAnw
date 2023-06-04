@@ -16,6 +16,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 
 public class SetupUtil {
 
+    // FIXME: Die meisten Dinge (Author, Sprache, etc) werden vom parser nicht richtig eingelesen
     public static ArrayList<CI> loadCIListFromJson(Context context) {
         ArrayList<CI> ciList = new ArrayList<>();
         String fileName = "CIs20-Simplified.json";
@@ -45,8 +46,7 @@ public class SetupUtil {
             Log.d("JsonLoader", "No CI objects found in the JSON file.");
         } else {
             for (CI ci : ciList) {
-                Log.d("JsonLoader", "CI ID: " + ci.getId());
-                Log.d("JsonLoader", "CI Title: " + ci.getTitle());
+                Log.d("CI JsonLoader", "CI ID: " + ci.getId());
             }
         }
     }
