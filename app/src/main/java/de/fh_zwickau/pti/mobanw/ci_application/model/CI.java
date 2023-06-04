@@ -13,7 +13,7 @@ public class CI implements Serializable {
     private Date recordedDate;
     private Language language;
     private String place;
-    private String authorName;
+    private Author author;
 
     public CI(int id, String title, String story, Date recordedDate, Language language, String place, String authorName) {
         this.id = id;
@@ -22,7 +22,7 @@ public class CI implements Serializable {
         this.recordedDate = recordedDate;
         this.language = language;
         this.place = place;
-        this.authorName = authorName;
+        this.author = author;
     }
 
     public int getId() {
@@ -49,7 +49,7 @@ public class CI implements Serializable {
         return place;
     }
 
-    public String getAuthorName() {
-        return authorName;
+    public Author getAuthor() {
+        return author;
     }
 }

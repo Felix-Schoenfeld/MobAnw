@@ -5,6 +5,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.TextUtils;
@@ -45,18 +46,26 @@ public class CIListActivity extends AppCompatActivity {
         TextView textView = new TextView(this);
         int backgroundColor = linearLayout.getBaseline();
         textView.setTextColor(backgroundColor);
-        // Create a SpannableString for the title
+
         SpannableString titleSpannable = new SpannableString(ci.getTitle());
         titleSpannable.setSpan(new RelativeSizeSpan(1.2f), 0, ci.getTitle().length(), 0); // Set large font size
 
-        // Create a SpannableString for the author
-        SpannableString authorSpannable = new SpannableString(ci.getTitle().toString());
-        authorSpannable.setSpan(new RelativeSizeSpan(0.8f), 0, ci.getTitle().toString().length(), 0); // Set small font size
+        // FIXME: derzeit kann die sprache der CIs nicht erkannt werden weil das einlesen nicht richtig gehr weil json
+        SpannableString authorSpannable = new SpannableString("Deutsch");
+        authorSpannable.setSpan(new RelativeSizeSpan(0.8f), 0, "Deutsch".length(), 0); // Set small font size
 
-        // Create a CharSequence to hold the combined text
         CharSequence combinedText = TextUtils.concat(titleSpannable, "\n", authorSpannable);
 
         textView.setText(combinedText);
         linearLayout.addView(textView);
+
+        // On click
+        textView.setOnClickListener( v -> {
+            Toast.makeText(getApplicationContext(), ""+ci.getId(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(CIListActivity.this, CIDetailActivity.class);
+            intent.putExtra("globalCIList", globalCIList);
+            intent.putExtra("selectedCI", ci);
+            startActivity(intent);
+        });
     }
 }
