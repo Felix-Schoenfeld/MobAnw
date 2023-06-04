@@ -13,6 +13,7 @@ import android.text.style.RelativeSizeSpan;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -61,7 +62,6 @@ public class CIListActivity extends AppCompatActivity {
 
         // On click
         textView.setOnClickListener( v -> {
-            Toast.makeText(getApplicationContext(), ""+ci.getId(), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(CIListActivity.this, CIDetailActivity.class);
             intent.putExtra("selectedCI", ci);
             startActivity(intent);

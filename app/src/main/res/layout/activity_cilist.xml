@@ -38,9 +38,11 @@
         app:layout_constraintVertical_bias="0.222" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/filterSpinner"
         android:layout_width="213dp"
         android:layout_height="20dp"
+        android:entries="@array/filterSpinnerItems"
+        android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.707"
@@ -53,8 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Filter"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/filterSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/filterSpinner"
         app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
