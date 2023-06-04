@@ -1,0 +1,1498 @@
+[
+  {
+      "id": 9933,
+      "title": "The deep Finish Forest",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "2/9/21",
+      "reflection": {
+          "reflection": "Without my two small girls it would perhaps have been less frightening. \n",
+          "keywords": []
+      },
+      "textStory": {
+          "story": "This happened 23 years ago. We (my husband, my two daughters 3 and 6 years old and me) were invited to a marriage in Finland near Tampere. Our friends told us that they rented a hut for us next to Tampere. We were very happy. We arrived in Helsinki by plane and rented a car to go to Tampere. \nThere, our friends told us to follow them by car. They would bring us to our hut. (Mökki) \nWe went to the main road and drove for about 50 kilometers. I started to be a bit angry because it was so far. Then we suddenly turned to the right and took a path into the forest. We imagined to arrive in a few minutes. But then our friends went on and on. They turned left and right and left…. \nSuddenly I was afraid because it was so far and I couldn´t remember the way anymore. I told to my husband: “We will never again find the way back!”. After 30 minutes we finally arrived at our hut. \nI told my friends: \"But what did you tell us? This is not next to Tampere. And how shall we ever find the way back?\"\nFortunately we had one of the first mobile-phones from Motorola with us. \nWithout that and with two small children I would have been really very afraid in this situation. \n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 9935,
+                  "label": "Englisch",
+                  "specification": null,
+                  "language": "en"
+              }
+          ],
+          "author": {
+              "minAge": 30,
+              "maxAge": 35,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 9951,
+                      "label": "Deutsch",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4425,
+              "label": "Finland",
+              "specification": null,
+              "language": "fi"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 6091,
+      "title": "Wie putzt mann denn eigentlich? ",
+      "origin": {
+          "id": 4902,
+          "label": "Hearsay",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          },
+          {
+              "id": 4885,
+              "label": "Proxemic",
+              "specification": null
+          }
+      ],
+      "created": "1/31/19",
+      "reflection": null,
+      "textStory": {
+          "story": "M. ist Geschäftsführer einer französischen Bäckerei in Deutschland. Eine Verkäuferin S. ist marokkanischer Herkunft. M. erzählt, dass er sehr wütend auf S. ist. Sie sei gefährlich für die Bäckerei. Ich frage nach dem Grund. S. wollte im Laden putzen und hat einen vollen Wassereimer auf den Boden geschüttet. Das Wasser lief durch ein Rohr am Boden in die elektrischen Leitungen, so dass ein Kurzschluss entstand. Alle Geräte fielen aus und der Sicherungskasten brannte halb ab. S., die zu diesem Zeitpunkt alleine im Laden war, hatte große Angst und informierte M. sofort telefonisch. M. fragte am Telefon, ob sie denn Wasser verschüttet hätte, was S. verneinte. Später erklärte Sie, dass Sie nur sorgfältig putzen wollte. Ich persönlich weiß, dass man in Algerien oft so putzt, dass man mit viel Schwung das Wasser aus dem Putzeimer über den Boden gießt. Hat S. das auch so gemacht? \nM. sagt jetzt, dass S. ihn angelogen hat und will sie deshalb entlassen. ",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 30,
+              "label": "Third person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 55,
+              "maxAge": 55,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 6128,
+                      "label": "Deutsch",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 6095,
+              "label": "Deutschland",
+              "specification": null,
+              "language": "en"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 7982,
+      "title": "Los españoles huelen a ajo",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "3/12/20",
+      "reflection": {
+          "reflection": "Die kritische Situation war nur von einer Seite wahrgenommen. Die Machtsituation spielt eine wesentliche Rolle",
+          "keywords": []
+      },
+      "textStory": {
+          "story": "Unos tres meses después de llegar a Essen, Alemania, procedente de Madrid, España, tenía que ir a la oficina de extranjeros para registrarme como residente en Alemania. Mi dominio del alemán no era muy bueno, pero suficiente (probablemente entre B1 y B2), pero nunca había tenido que hacer algo similar antes y menos en una lengua extranjera. En la oficina había varias personas que recibían a los visitantes detras de mesas de trabajo. Había que sacar un número y esperar su turno. Tras unos 20 minutos de espera, que me hicieron ponerme aún más nervioso. Me tocó el turno. La señora que me recibió me preguntó qué deseaba y le contestó \"soy español y...\". Iba a decir \"soy español y quiere registrarme como residente\", pero la empleada me interrumpió y, con sonrisa beatífica, me dijó: \"usted es español y huele a ajo\". Me sentí ofendido, pero decidí callarme porque pensé que yo era quien quería solicitar algo y ella la que decidía si me lo daba. Pensé que si hubiera ocurrido en una lengua que yo dominará o en un entorno conocido para mí, habría solicitado hablar con su superior. Siempre me ha quedado la duda de por qué dijo eso. Tal vez no había querido humillarme. Tal vez era el entusiasmo por un \"auténtico\" español que olía como se supone que tienen que oler los españoles lo que la movía. Huelga añadir que yo no podía oler a ajo, hacía días que no había comido ajo en ninguna forma y acostumbro a duchar me a diario. ",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4861,
+                  "label": "Spanish",
+                  "specification": null,
+                  "language": "es"
+              }
+          ],
+          "author": {
+              "minAge": 30,
+              "maxAge": 35,
+              "gender": {
+                  "id": 22,
+                  "label": "Male",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 7999,
+                      "label": "Spanish",
+                      "specification": null,
+                      "language": "es"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4432,
+              "label": "Germany",
+              "specification": null,
+              "language": "en"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 7134,
+      "title": "Busfahren",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4884,
+              "label": "Paraverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "12/6/19",
+      "reflection": null,
+      "textStory": {
+          "story": "Während meines Urlaubs in Rimini wollte ich mit zwei Freunden einen Ausflug unternehmen. Wir entschieden uns mit dem Bus zu fahren, da es zu Fuß ein zu langer Weg gewesen wäre. Genau wie in Deutschland gibt es auch in Italien Haltestellenschilder, die darauf hinweisen, wo der Bus hält. Nach ein paar Minuten warten, kam er dann auch gleich. Doch obwohl wir direkt an der Haltestelle standen und der Busfahrer uns auch sah fuhr er weiter… Später haben wir erfahren, dass man den Fahrer immer mit einem Winkzeichen darauf aufmerksam machen muss, wenn man mitfahren will! Tja, das muss man erstmal wissen!!!\n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 18,
+              "maxAge": 35,
+              "gender": {
+                  "id": 22,
+                  "label": "Male",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4456,
+              "label": "Italy",
+              "specification": null,
+              "language": "it"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 7106,
+      "title": "Am ersten Tag in Deutschland ",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4884,
+              "label": "Paraverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          },
+          {
+              "id": 4885,
+              "label": "Proxemic",
+              "specification": null
+          }
+      ],
+      "created": "12/6/19",
+      "reflection": {
+          "reflection": "*Beitrag vom WHZ Forum",
+          "keywords": []
+      },
+      "textStory": {
+          "story": "Es ist am ersten Tag als ich in Deutschland ankam passiert: und es war die Begrüßung. Vorher muss ich sagen, dass meine Gastfamilie mich im Flughafen abgeholt hat. Das Kennenlernen wurde von meiner Seite mit georgischer Gewohnheit begleitet: Umarmen und Küssen. Aber die Deutschen standen leider wie sturr. \"Etwas stimmt nicht\" -dachte ich- \"Entweder darf man nicht beim Kennenlernen küssen oder sie sind gar nicht freundlich\". (Sie sind sehr freundlich- wie es sich ergab). \nLeider ist es bis heute so: wenn ich meine Gasteltern treffe, weiß ich nicht, ob ich sie bei der Begrüßung auch umarmen darf, und wenn ich umarme, dabei küssen? Gar nicht leicht, aber fragen möchte ich irgendwie nicht. \n\n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 18,
+              "maxAge": 25,
+              "gender": null,
+              "nationalities": [
+                  {
+                      "id": 4645,
+                      "label": "Georgian",
+                      "specification": null,
+                      "language": "ge"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4432,
+              "label": "Germany",
+              "specification": null,
+              "language": "de"
+          },
+          "place": null,
+          "indications": []
+      }
+  },
+  {
+      "id": 7040,
+      "title": "Verkaufsstrategie in Polen",
+      "origin": {
+          "id": 4902,
+          "label": "Hearsay",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "12/2/19",
+      "reflection": null,
+      "textStory": {
+          "story": "In Polen hat sich ein großes deutsches Unternehmen niedergelassen und mehrere Verkaufsfilialen eingerichtet. Die Mitarbeiter und die Verkäufer sind Polen, der Geschäftsführer ist ein deutscher Manager. Bei einer großen Besprechung mit den Verkäufern instruiert der Deutsche die polnischen Verkäufer über die Verkaufsstrategie und sagt: „Sie sollten als Verkäufer bitte nicht aufdringlich sein“. Nach einigen Monaten stellt sich heraus, dass die Umsatzzahlen stark heruntergegangen sind. \n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 30,
+              "label": "Third person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 37,
+              "maxAge": 37,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 7049,
+                      "label": "Autor unbekannt, ukrainische Mitarbeiterin als Redakteur",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4518,
+              "label": "Poland",
+              "specification": null,
+              "language": "pl"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 6999,
+      "title": "Zehn Bier in China",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4884,
+              "label": "Paraverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          },
+          {
+              "id": 4885,
+              "label": "Proxemic",
+              "specification": null
+          }
+      ],
+      "created": "12/2/19",
+      "reflection": null,
+      "textStory": {
+          "story": "Zwei deutsche Geschäftsleute lassen sich in einem chinesischen Lokal zum Mittagessen nieder. Als die Bedienung vorbei kommt, zeigt einer der beiden Deutschen auf das \"Beer\"-Zeichen an der Wand und hält dazu Daumen und Zeigefinger der rechten Hand hoch. Ein paar Minuten später kommt der chinesische Kellner wieder und serviert den beiden lächelnd 10 Gläser Bier. Die beiden Deutschen sind etwas verwundert, da sie doch nur zwei Gläser haben wollten und nicht zehn! … Am nächsten Tag erzählen sie die Geschichte einem Mitarbeiter, der schon länger in China zu tun hat. Der grinst nur und meint lapidar \"Nun ja, in China zählt man eben anders. Daumen und Zeigefinger hochgehalten bedeuten nämlich zehn.\"\n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 30,
+              "label": "Third person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 37,
+              "maxAge": 37,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": []
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 7002,
+              "label": "China",
+              "specification": null,
+              "language": "cn"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 6980,
+      "title": "Das Geschäftsessen",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "12/2/19",
+      "reflection": null,
+      "textStory": {
+          "story": "Nach einem langen Arbeitstag auf der Messe Bologna gehen die italienischen und deutschen Verantwortlichen für ein neues gemeinsames Messeprojekt zusammen essen. Natürlich laden die Italiener ein, denn sie wollen mit den Deutschen an diesem Abend noch viele wichtige Dinge besprechen. Gleich nach dem Aperitif, langen die Deutschen fröhlich und entspannt beim guten Wein kräftig zu und fangen an Witze zu erzählen, zu lachen und immer mehr zu trinken. Die Italiener machen mit, sind aber bitter enttäuscht. Die Deutschen merken nichts! \n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 30,
+              "label": "Third person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 37,
+              "maxAge": 37,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 6990,
+                      "label": "Redakteurin ukrainisch, Autor nicht bekannt",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4456,
+              "label": "Italy",
+              "specification": null,
+              "language": "it"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+    "id": 6353,
+    "title": "Французы и немцы групповая работа",
+    "origin": {
+      "id": 4902,
+      "label": "Hearsay",
+      "specification": null
+    },
+    "communicationDomains": [
+      {
+        "id": 4882,
+        "label": "Verbal",
+        "specification": null
+      }
+    ],
+    "created": "6/21/19",
+    "reflection": null,
+    "textStory": {
+      "story": "Международная команда состоящая из двух сторон - французы и немцы. Во время планирования не смогли сработаться. Причинами этому был в какой-то степени менталитет. Немцы всегда приходили на планировку готовые. исследовали проблему и находили решение или как найти решение. А французы обычно приходили неподготовленные. Это не нравилось немецким участникам. А то что немцы все подготовленные приходили напрягало французов. Таким образом две стороны просто не сошлись.\n",
+      "kind": {
+        "id": 4267,
+        "label": "Secondary data/Edited data",
+        "specification": null
+      },
+      "perspective": {
+        "id": 30,
+        "label": "Third person",
+        "specification": null
+      },
+      "languages": [
+        {
+          "id": 4853,
+          "label": "Russian",
+          "specification": null,
+          "language": "ru"
+        }
+      ],
+      "author": {
+        "minAge": null,
+        "maxAge": null,
+        "gender": null,
+        "nationalities": []
+      },
+      "license": null
+    },
+    "location": {
+      "country": {
+        "id": 4432,
+        "label": "Germany",
+        "specification": null,
+        "language": "de"
+      },
+      "place": {
+        "id": 4903,
+        "label": "Country",
+        "specification": null
+      },
+      "indications": []
+    }
+  },
+  {
+      "id": 6890,
+      "title": "Gemeinsame Besprechungen",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4884,
+              "label": "Paraverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          },
+          {
+              "id": 4885,
+              "label": "Proxemic",
+              "specification": null
+          }
+      ],
+      "created": "11/27/19",
+      "reflection": null,
+      "textStory": {
+          "story": "Ein anderes Beispiel kultureller Unterschiede habe ich in einem Projektteam mit englischen Kollegen erlebt. Wir hatten den Auftrag, gemeinsam eine IT-Umsetzung durchzuführen und waren 2 deutsche und 3 englische Kollegen. Wie bei uns im deutschen Standort üblich, bereiteten wir Besprechungen immer recht detailliert vor und nach. Es gab Projektpläne, Protokolle, Arbeitspakete und alles was man sich halt so vorstellen kann   . Die Besprechungen sollten nach unserem Empfinden dazu dienen den erreichten Zwischenstand auszutauschen und die nächsten Schritte festzulegen. Hierfür hatten wir einen detaillierten Projektplan. Wie sich herausstellte, hatten die englischen Kollegen ein anderes Verständnis vom Ziel der gemeinsamen Besprechungen. Sie wollten eher im Termin die Zwischenstände erarbeiten und vage überlegen, was als nächstes kommen könnte. Das führte in den ersten Terminen zu deutlicher Irritation, fasst zum Eklat. Wir waren verwundert. Man könne doch so nicht in Projekten zusammenarbeiten. Hierfür bis nach London zu reisen, was für eine Verschwendung… Es kam zu etlichen emotionalen Telefonaten und E-Mails. Wir dachten, die Kollegen tun nichts und die Kollegen dachten „Typisch deutsch, wollen alles vorgeben, sind unflexibel …“ Erst als wir eines Abends beim Bier im pub zusammen saßen, konnten wir das fernab jeglicher Besprechungsräume klären. Die englischen Kollegen äußerten, dass es bei ihnen eben nicht üblich sei den Termin so faktisch zu nutzen. Es ginge vielmehr darum „Schwingungen aufzunehmen“ und im Nachgang konkretere Schritte aufzubauen. Die Erwartungshaltung an die Besprechungen war eben eine komplett andere. Wir haben für die Besprechungen dann gemeinsam die Erwartungen besser geklärt und ein paar kleine Regeln untereinander aufgestellt. Es lief so um einiges besser und auch mit dem von uns empfundenen „Tempo drosseln“ haben wir am Ende fristgerecht umgesetzt. \n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 25,
+              "maxAge": 50,
+              "gender": null,
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4566,
+              "label": "United Kingdom",
+              "specification": null,
+              "language": "gb"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 6784,
+      "title": "Franzosen haben Augen am Hinterkopf",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          }
+      ],
+      "created": "10/30/19",
+      "reflection": null,
+      "textStory": {
+          "story": "Ich war mit meinem französischen Partner in Italien. Wie waren in einer touristischen Stadt unterwegs und wollten in einen kleinen Laden, in dem es schöne Ledertaschen gab. Der Eingang wurde von zwei älteren deutschen Damen versperrt, die sich Taschen anschauten, die im Eingangsbereich hingen. Sie drehten uns den Rücken zu und bemerken nicht, dass wir in den Laden wollten. Mein Partner stand vor mir, wartete einige Zeit und drängte sich dann an den Damen vorbei, wobei er sie auch nicht ganz sachte anrempelte. Die Damen und ich fanden das sehr unhöflich. Er aber war überzeugt davon, dass die Damen sich unhöflich verhalten hatten, weil sie einfach egoistisch den Eingang versperrt hatten und nicht darauf geachtet hatten, dass auch andere Leute Lust haben könnten  in den Laden zu kommen. Ich habe späte häufig in Frankreich beobachte, dass Franzosen viel mehr darauf achten, was hinter Ihnen vorgeht, um dann rechtzeitig höflich Platz machen zu können noch bevor derjenige, der vorbei will irgendetwas sagt, damit der andere ausweicht. \n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 45,
+              "maxAge": 55,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4456,
+              "label": "Italy",
+              "specification": null,
+              "language": "it"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 5880,
+      "title": "Wiederholtes Angebot an Besucher ",
+      "origin": {
+          "id": 4902,
+          "label": "Hearsay",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "1/22/19",
+      "reflection": null,
+      "textStory": {
+          "story": "In Rumänien ist es üblich, dass, wenn man Besucher hat und ihnen etwas anbietet, dass sie zuerst „nein“ sagen, und erst nachdem man ihnen mehrmals angeboten hat, nehmen sie davon. Ich bin also daran gewöhnt gewesen, dass man mich sehr oft fragt, ob ich etwas möchte oder nicht. Und als ich zum ersten Mal nach Deutschland kam, bin ich ein bisschen enttäuscht und teilweise auch hungrig geblieben, weil man hier nur einmal gefragt wird, ob man etwas möchte oder nicht. Und wenn man „nein“ sagt, bleibt es dabei, also man bleibt hungrig.\n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 36,
+              "maxAge": 36,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": []
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4432,
+              "label": "Germany",
+              "specification": null,
+              "language": "de"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 5849,
+      "title": "Zeitschriftenabonnement",
+      "origin": {
+          "id": 4902,
+          "label": "Hearsay",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4884,
+              "label": "Paraverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "1/22/19",
+      "reflection": null,
+      "textStory": {
+          "story": "Zwar habe ich kein konkretes Missverständnis, aber es hat immer noch einen Punkt, das zu Missverständnissen führen kann oder führt.\nEs war im Juli. Nach einem anstrengenden Tag gingen meine Freundin und ich in die Stadt. Wir wollten etwas rumschauen und danach was Köstliches essen. In der Stadt auf dem Weg zum Mampfen hat uns ein junger Mann angesprochen. Er war ein Türke und hat angefangen von seinem Leben zu erzählen und das wir ihn nur zuhören sollten. Das haben wir auch getan. Leider war er ein bisschen schnell und ich konnte nicht herausfinden, dass er eigentlich uns angelogen hatte. Er erzählte und wir hörten zu…\nDanach sagte er, dass er einen gewissen Punkt bekommen wird, wenn er ein Abonnement eintragen kann. Er war zuvor ein Dealer. Meine Freundin und ich hatten Mitleid und abonnierten uns für drei Monate an einer Zeitschrift, dass er seine Punkte bekommen kann. Ich fragte zweimal wann ich kündigen konnte. Er meinte, dass ich nur für drei Monate mein Abonnement habe und dass es nach drei Monaten aufhören würde. Ich sollte jedoch am Ende dieser drei Monate, (vergehen) einen Kündigungsbrief schreiben. So hatte ich es auch gemacht. Der Tag kam und ich kündigte!! Aber siehe da!! Was ist denn da los!! Die Zeitschrift kam nach meiner Kündigung immer noch. Und von meinem Konto haben sie den Beitrag für drei Monate wieder abgezogen. „Da stimmt was nicht“, meinte ich. Mein Abonnement war für drei Monate und ich habe rechtzeitig gekündigt!!\nIch wendete mich an eine deutsche Frau, die ich kannte. Sie sah sich die Papiere an und sagte, dass das Ganze  völlig rechtlich richtig ist. Also bei uns ist es nicht so, dass man den Kunden betrügt. Wenn du kündigst, geht es nach deinem Antrag; das Datum reicht für die Kündigung. Man schreibt und macht keine hinterlistigen Pläne wie hier.\nDann hatte die nette Frau zu mir gesagt, dass in Deutschland es immer heißt: „Lese immer die kleingedruckte Schrift, bevor du unterschreibst.“\nTja, jetzt habe ich diese Zeitschrift für zwei Jahre. Da ich das Kleingedruckte nicht gelesen habe und so naiv war, hat mich natürlich geärgert. Das zweite Problem ist, dass ich die Zeitschrift gar nicht brauch, denn es ist eine Fernsehzeitschrift, aber ich habe keinen  Fernseher!!\n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 36,
+              "maxAge": 36,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4765,
+                      "label": "Autor unbekannt, ukrainische Mitarbeiterin als Redakteur",
+                      "specification": null,
+                      "language": "ua"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4432,
+              "label": "Germany",
+              "specification": null,
+              "language": "de"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 9693,
+      "title": "Essengehen in England",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "1/6/21",
+      "reflection": null,
+      "textStory": {
+          "story": "Ich war mit meinem Papa im Urlaub in London. Wir waren beide vorher noch nie in England. An einem Abend waren wir essen. Wir dachten, dass es genauso wie in Deutschland abläuft und setzten uns also hin, schauten in die Karte und warteten bis jemand die Bestellung aufnimmt. Das passierte allerdings nicht. Irgendwann meinte mein Papa zu mir, dass es so aussieht, als würden alle ihre Bestellung bei Tresen aufgeben. Er ging also nach vorn, kam nochmal kurz zurück, um nach der Tischnummer zu schauen. Als er sich wieder setzte, meinte er, er habe bestellt und auch gleich bezahlt. Wir warteten nicht lang, da brachte jemand das Essen. Mein Papa fragte ihn, nach den Getränken. Auf Grund von Sprachbarrieren verstanden wir allerdings nicht was er uns zu sagen versuchte. Aber er merkte das schnell und brachte kurz darauf die Getränke. Wir beobachteten die Leute und merkten, dass man am Tresen die Bestellung auf gibt, bezahlt, die Getränke mit nimmt und das Essen dann gebracht wird. ",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 16,
+              "maxAge": 17,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4566,
+              "label": "United Kingdom",
+              "specification": null,
+              "language": "gb"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 9784,
+      "title": "Küsschen",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4885,
+              "label": "Proxemic",
+              "specification": null
+          }
+      ],
+      "created": "1/8/21",
+      "reflection": {
+          "reflection": "Die Nähe hat mich zunächst überfordert, aber natürlich habe ich mich gefreut. Dadurch, dass ich aber nicht wusste, dass dies üblich ist, habe ich es zunächst missinterpretiert und dachte, dass es eine Art Flirt sei, vor allem, da wir uns noch nicht kannten. Da ich aber die Menschen um mich herum beobachtet habe, war es nicht schwer herauszufiltern, dass es ein übliches Begrüßungsritual ist.",
+          "keywords": []
+      },
+      "textStory": {
+          "story": "Als ich 14 Jahre alt war, nahm ich an einem zweiwöchigen Sprachaustausch in die frankophone Schweiz teil. Zunächst war meine Gastschwester bei uns, danach habe ich sie nahe Lausanne besucht. Ich wurde von der Familie abgeholt und am gleichen Tag stand eine Party im Verwandten- und Freundeskreis an, zu der ich mitkam. Dort waren auch Jugendliche in meinem Alter, unter anderem auch Jungs. Als schüchterner Teenie ist mir das Herz in die Hose gerutscht, als ich gerade von einem der netten Jungs ganz offensiv mit 2 Küsschen auf die Wange begrüßt wurde. Damals war mir nicht klar, dass das so üblich ist.",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 14,
+              "maxAge": 14,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4548,
+              "label": "Switzerland",
+              "specification": null,
+              "language": "de"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 9401,
+      "title": "Auto nicht abschließen zum Diebstahlschutz",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "11/20/20",
+      "reflection": null,
+      "textStory": {
+          "story": "Während des Urlaubs auf den Seychellen fuhren wir mit dem Auto zu einem Strand. \nEin guter Freund, welcher auf den Seychellen aufgewachsen ist, war ganz erstaunt als wir unser gemietetes Auto abschließen wollten.\nWir sagten, dass es doch sonst viel leichter gestohlen werden kann.\nEr erwiderte nur, dass auf einer so kleinen Insel niemand das Auto sondern die Sachen im Auto klaut.\nDas Auto wird immer offen gelassen, damit es nicht beschädigt wird.\nDie Diebe wissen, dass in offenen Autos keine Wertgegenstände zu finden sind.\nAbgeschlossene Autos werden beschädigt, um an die Wertgegenstände zu gelangen.",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 15,
+              "maxAge": 20,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4532,
+              "label": "Seychelles",
+              "specification": null,
+              "language": "sc"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 8085,
+      "title": "Chic fürs Kino",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4883,
+              "label": "Nonverbal",
+              "specification": null
+          },
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "4/2/20",
+      "reflection": null,
+      "textStory": {
+          "story": "Zu Beginn meines Auslandsjahres in Brasilien war ich mit meinen neugewonnenen Schulfreundinnen ins Kino verabredet. Wie aus Deutschland gewohnt, habe ich mich ganz normal angezogen (Jeans, T-Shirt, Sportschuhe, nicht geschminkt). Als ich meine Freundinnen vor dem Kino angetroffen hab, waren sie alle richtig chic gekleidet (High Heels, elegantes Outfit, auffällig geschminkt). Es war eine sehr merkwürdige und lustige Situation. In Zukunft habe ich meine Outfits mit denen meiner Freundinnen abgestimmt oder wir haben uns zusammen \"gestylt\". ",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 15,
+              "maxAge": 17,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4378,
+              "label": "Brazil",
+              "specification": null,
+              "language": "br"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 7629,
+      "title": "Vom Stereotyp getroffen",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "1/24/20",
+      "reflection": {
+          "reflection": null,
+          "keywords": []
+      },
+      "textStory": {
+          "story": "Lena und ich sind im Bürobereich des departamento de idiomas  und kommen suchen eine profe. Uns kommt ein anderer Angestellter entgegen und fragt und nach der üblichen verbalen Begrüßung ob und wie er uns helfen könne. Wir schildern ihm das Anliegen und er gibt uns die nötigen Infos. Nachdem wir uns bedankt haben, fragt er noch woher wir kommen und auf unsere Antwort „Alemania“ meint er: „Oh nein, ihr Armen! Da ist Oktober und ihr seid hier in Argentinien!“ Ich lächle verlegen, brummle etwas von „Naja, kann man eben nichts machen“ und wir gehen – er ist ja auch schon am Weggehen.\nIch alter Sachse habe das natürlich überhaupt nicht verstanden und deshalb Lena gefragt, ob ich mich vielleicht verhört habe oder was es denn bitte mit Oktober auf sich hat. Da Lena schon in den USA war, weiß sie dass man mit Deutschland oft nur Bayern, Bier und das Oktoberfest verbindet und da haben wir auch schon die Erklärung.\n",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              },
+              {
+                  "id": 4861,
+                  "label": "Spanish",
+                  "specification": null,
+                  "language": "es"
+              }
+          ],
+          "author": {
+              "minAge": 18,
+              "maxAge": 25,
+              "gender": {
+                  "id": 23,
+                  "label": "Female",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4364,
+              "label": "Argentina",
+              "specification": null,
+              "language": "ar"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 7459,
+      "title": "Wecker stellen - problematischer als gedacht",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "1/16/20",
+      "reflection": null,
+      "textStory": {
+          "story": "Als ich 15 Jahre alt war, war ich für zwei Wochen bei einer Gastfamilie in England. Ich teilte mir das Zimmer mit einem gleichaltrigen italienischen Mädchen. Sonntag Abend fragte ich, wer von uns beiden den Wecker für den morgigen Schultag stellen wollte. Das Mädchen beschloss den Wecker zu stellen. Dann einigten wir uns noch auf eine Zeit (eine Stunde, bevor wir das Haus verlassen mussten). \nAm nächsten Morgen wurde ich von meiner Gastmutter geweckt, die laut meinen Namen rief. So wurde ich sehr unsanft 10 Minuten bevor wir gehen mussten geweckt. Als ich langsam wach wurde, sah ich wie das Mädchen bereits fertig auf dem Bett saß und mit ihrem Handy beschäftigt war. Sie hatte es offensichtlich nicht für nötig gehalten, mich zu wecken, da ich offensichtlich ihren Wecker nicht gehört hatte. \nAb da stellten wir uns immer beide einen Wecker. ",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": null,
+              "maxAge": null,
+              "gender": null,
+              "nationalities": []
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4566,
+              "label": "United Kingdom",
+              "specification": null,
+              "language": "en"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  },
+  {
+      "id": 7509,
+      "title": "E instead of I",
+      "origin": {
+          "id": 4900,
+          "label": "Own Experience",
+          "specification": null
+      },
+      "communicationDomains": [
+          {
+              "id": 4882,
+              "label": "Verbal",
+              "specification": null
+          }
+      ],
+      "created": "1/16/20",
+      "reflection": {
+          "reflection": null,
+          "keywords": []
+      },
+      "textStory": {
+          "story": "Als ich mit meinem Vater im Urlaub auf einem Roadtrip in den USA war, wollten wir zum Ende der Reise einen Transfer von unserem Hotel zum Flughafen buchen. Dazu war es natürlich nötig, alle Kontaktdaten anzugeben. Wir riefen also bei dem  Transferunternehmen an doch schon bei der ersten Frage kam das Gespräch ins Stocken. Mein Vater sollte unseren Nachnamen buchstabieren. Alles war kein Problem, bis wir zum Buchstaben i kamen, welcher ja im Englischen als „Ei“ ausgesprochen wird und nicht wie bei uns als „i“. Die Rezeptionistin verstand aber logischerweise immer den Buchstaben „e“. Unter diesem Namen fand sie natürlich nicht den richtigen Kontakt. Nach ca. 10 Minuten der Verwirrung haben wir den Fehler doch noch gemerkt und ihn korrigiert. ",
+          "kind": {
+              "id": 4266,
+              "label": "Primary data",
+              "specification": null
+          },
+          "perspective": {
+              "id": 29,
+              "label": "First person",
+              "specification": null
+          },
+          "languages": [
+              {
+                  "id": 4791,
+                  "label": "German",
+                  "specification": null,
+                  "language": "de"
+              }
+          ],
+          "author": {
+              "minAge": 16,
+              "maxAge": 20,
+              "gender": {
+                  "id": 22,
+                  "label": "Male",
+                  "specification": null
+              },
+              "nationalities": [
+                  {
+                      "id": 4648,
+                      "label": "German",
+                      "specification": null,
+                      "language": "de"
+                  }
+              ]
+          },
+          "license": null
+      },
+      "location": {
+          "country": {
+              "id": 4571,
+              "label": "United States",
+              "specification": null,
+              "language": "en"
+          },
+          "place": {
+              "id": 4903,
+              "label": "Country",
+              "specification": null
+          },
+          "indications": []
+      }
+  }
+]
