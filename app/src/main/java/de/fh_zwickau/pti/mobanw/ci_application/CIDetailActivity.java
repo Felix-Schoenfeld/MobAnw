@@ -29,15 +29,17 @@ public class CIDetailActivity extends AppCompatActivity {
         TextView titleText = (TextView) findViewById(R.id.titleText);
         TextView authorText = (TextView) findViewById(R.id.tvAutor);
         TextView dateText = (TextView) findViewById(R.id.tvDatum);
-        TextView locationText = (TextView) findViewById(R.id.tvOrt);
+        TextView placeText = (TextView) findViewById(R.id.tvOrt);
         TextView languageText = (TextView) findViewById(R.id.tvSprache);
+        TextView storyText = (TextView) findViewById(R.id.mltStory);
 
         titleText.setText(ci.getTitle());
-
-        dateText.setText(ci.getRecordedDate().toString());
-        locationText.setText(ci.getPlace());
-        languageText.setText(ci.getLanguage().toString());
         authorText.setText(ci.getAuthor().toString());
+        dateText.setText(ci.getRecordedDate().toString());
+        placeText.setText(ci.getPlace());
+        languageText.setText(ci.getLanguage().toString());
+        storyText.setText(ci.getStory());
+        storyText.setFocusable(false);
 
     }
 }

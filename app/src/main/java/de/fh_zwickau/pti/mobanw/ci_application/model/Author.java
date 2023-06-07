@@ -34,6 +34,7 @@ public class Author implements Serializable {
         return languages;
     }
 
+    @Override
     public String toString() {
         String s = "";
         s += gender.toString() + " ";
