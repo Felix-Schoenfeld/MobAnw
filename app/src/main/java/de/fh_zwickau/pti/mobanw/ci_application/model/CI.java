@@ -15,7 +15,7 @@ public class CI implements Serializable {
     private String place;
     private Author author;
 
-    public CI(int id, String title, String story, Date recordedDate, Language language, String place, String authorName) {
+    public CI(int id, String title, String story, Date recordedDate, Language language, String place, Author author) {
         this.id = id;
         this.title = title;
         this.story = story;
