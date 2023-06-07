@@ -1,5 +1,7 @@
 package de.fh_zwickau.pti.mobanw.ci_application.model;
 
+import android.os.Build;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -30,5 +32,17 @@ public class Author implements Serializable {
 
     public ArrayList<Language> getLanguages() {
         return languages;
+    }
+
+    public String toString() {
+        String s = "";
+        s += gender.toString() + " ";
+        if (minAge != 0 || maxAge != 0) {
+            s += "("+minAge+"-"+maxAge+") ";
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            s += languages.stream().count() + " languages";
+        }
+        return s;
     }
 }
