@@ -72,7 +72,9 @@ public class SetupUtil {
 
         id = Integer.valueOf(json.get("id").toString());
         title = json.get("title").toString();
+        title = stripQuotationMarks(title);
         story = json.get("textStory").getAsJsonObject().get("story").toString();
+        story = stripQuotationMarks(story);
         DateFormat formatter = new SimpleDateFormat("mm/dd/yy");
         try {
             recordedDate = formatter.parse(json.get("created").toString());
@@ -83,8 +85,8 @@ public class SetupUtil {
         languageString = stripQuotationMarks(languageString);
         language = stringToLanguage(languageString);
 
-
         place = json.get("location").getAsJsonObject().get("country").getAsJsonObject().get("label").toString();
+        place = stripQuotationMarks(place);
 
         // Author
 
