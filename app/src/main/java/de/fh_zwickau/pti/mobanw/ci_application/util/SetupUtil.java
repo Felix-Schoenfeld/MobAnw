@@ -72,7 +72,11 @@ public class SetupUtil {
 
         id = Integer.valueOf(json.get("id").toString());
         title = json.get("title").toString();
+        title = stripQuotationMarks(title);
         story = json.get("textStory").getAsJsonObject().get("story").toString();
+        story = stripQuotationMarks(story);
+        story = story.replaceAll("\\\\\\\"", "\"");
+        story = story.replaceAll("\\\\n","\n");
         DateFormat formatter = new SimpleDateFormat("mm/dd/yy");
         try {
             recordedDate = formatter.parse(json.get("created").toString());
@@ -80,9 +84,11 @@ public class SetupUtil {
             recordedDate = new Date();
         }
         String languageString = json.get("textStory").getAsJsonObject().get("languages").getAsJsonArray().get(0).getAsJsonObject().get("language").toString();
+        languageString = stripQuotationMarks(languageString);
         language = stringToLanguage(languageString);
 
         place = json.get("location").getAsJsonObject().get("country").getAsJsonObject().get("label").toString();
+        place = stripQuotationMarks(place);
 
         // Author
 
@@ -95,20 +101,28 @@ public class SetupUtil {
         Log.d("Author JSON",authorJson.toString());
 
         try {
-            minAge = Integer.valueOf(authorJson.get("minAge").toString());
-            maxAge = Integer.valueOf(authorJson.get("maxAge").toString());
+            minAge = Integer.valueOf(stripQuotationMarks(authorJson.get("minAge").toString()));
+            maxAge = Integer.valueOf(stripQuotationMarks(authorJson.get("maxAge").toString()));
         } catch(NumberFormatException ex) {
             minAge = 0;
             maxAge = 0;
         }
 
-        String genderString = authorJson.get("gender").toString();
+        String genderString = "";
+        try {
+            genderString = authorJson.get("gender").getAsJsonObject().get("label").toString();
+            genderString = stripQuotationMarks(genderString);
+            Log.d("gender",genderString);
+        } catch (Exception e) {
+            genderString = "Unknown";
+        }
+
         gender = stringToGender(genderString);
 
         JsonArray nationalitiesArray = authorJson.get("nationalities").getAsJsonArray();
         for (int i=0; i < nationalitiesArray.size(); i++) {
             JsonObject nationality = nationalitiesArray.get(i).getAsJsonObject();
-            languages.add(stringToLanguage(nationality.get("language").toString()));
+            languages.add(stringToLanguage(stripQuotationMarks(nationality.get("language").toString())));
         }
 
 
@@ -163,6 +177,13 @@ public class SetupUtil {
             }
         }
         return gender;
+    }
+
+    private static String stripQuotationMarks(String string) {
+        if (string.startsWith("\"") && string.endsWith("\"")) {
+            string = string.substring(1, string.length() - 1);
+        }
+        return string;
     }
 
     public static void ciListDebugPrint(ArrayList<CI> ciList) {

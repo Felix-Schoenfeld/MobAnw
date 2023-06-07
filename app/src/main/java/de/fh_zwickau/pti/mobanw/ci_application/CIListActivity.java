@@ -20,6 +20,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 public class CIListActivity extends AppCompatActivity {
 
     ArrayList<CI> globalCIList;
+    ArrayList<CI> filteredCIList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +31,27 @@ public class CIListActivity extends AppCompatActivity {
         }
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Listen/Suchen)", Toast.LENGTH_SHORT).show();
 
+        filteredCIList = new ArrayList<>(globalCIList);
+        viewCIList();;
+    }
+
+    // Called by filter UI element
+    protected void filterCIList() {
+        // TODO lesen der filter aus der UI und anwenden
+        filteredCIList = new ArrayList<>(globalCIList);
+        viewCIList();
+    }
+
+    // Called by sort UI element
+    protected void sortCIList() {
+        // TODO lesen der sortierung aus UI und anwenden
+        viewCIList();
+    }
+
+    private void viewCIList() {
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ciListLinearLayout);
         linearLayout.removeAllViews();
-        for (CI ci : globalCIList) {
+        for (CI ci : filteredCIList) {
             addCIToUI(ci,linearLayout);
         }
     }
