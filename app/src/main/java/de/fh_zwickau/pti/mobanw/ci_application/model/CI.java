@@ -1,18 +1,19 @@
 package de.fh_zwickau.pti.mobanw.ci_application.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 // Anforderung:
 // Jedes CI muss mindestens einen Titel, eine Geschichte, eine ID, ein Erfassungsdatum,
 // eine Sprache, den Ort des Geschehens, und Angaben zum Autor enthalten.
-public class CI {
+public class CI implements Serializable {
     private int id;
     private String title;
     private String story;
     private Date recordedDate;
     private Language language;
     private String place;
-    private String authorName;
+    private Author author;
 
     public CI(int id, String title, String story, Date recordedDate, Language language, String place, String authorName) {
         this.id = id;
@@ -21,7 +22,7 @@ public class CI {
         this.recordedDate = recordedDate;
         this.language = language;
         this.place = place;
-        this.authorName = authorName;
+        this.author = author;
     }
 
     public int getId() {
@@ -48,7 +49,7 @@ public class CI {
         return place;
     }
 
-    public String getAuthorName() {
-        return authorName;
+    public Author getAuthor() {
+        return author;
     }
 }
