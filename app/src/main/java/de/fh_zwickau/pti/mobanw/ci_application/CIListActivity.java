@@ -1,23 +1,15 @@
 package de.fh_zwickau.pti.mobanw.ci_application;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.style.RelativeSizeSpan;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -26,6 +18,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 public class CIListActivity extends AppCompatActivity {
 
     ArrayList<CI> globalCIList;
+    ArrayList<CI> filteredCIList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +29,20 @@ public class CIListActivity extends AppCompatActivity {
         }
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Listen/Suchen)", Toast.LENGTH_SHORT).show();
 
+        filteredCIList = new ArrayList<>(globalCIList);
+        viewCIList();;
+    }
+
+    protected void filterCIList() {
+        // TODO
+        filteredCIList = new ArrayList<>(globalCIList);
+        viewCIList();
+    }
+
+    private void viewCIList() {
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ciListLinearLayout);
         linearLayout.removeAllViews();
-        for (CI ci : globalCIList) {
+        for (CI ci : filteredCIList) {
             addCIToUI(ci,linearLayout);
         }
     }
