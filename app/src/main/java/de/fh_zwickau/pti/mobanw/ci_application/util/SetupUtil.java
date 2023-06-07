@@ -75,6 +75,8 @@ public class SetupUtil {
         title = stripQuotationMarks(title);
         story = json.get("textStory").getAsJsonObject().get("story").toString();
         story = stripQuotationMarks(story);
+        story = story.replaceAll("\\\\\\\"", "\"");
+        story = story.replaceAll("\\\\n","\n");
         DateFormat formatter = new SimpleDateFormat("mm/dd/yy");
         try {
             recordedDate = formatter.parse(json.get("created").toString());
