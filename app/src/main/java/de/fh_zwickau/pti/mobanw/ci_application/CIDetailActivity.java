@@ -27,16 +27,19 @@ public class CIDetailActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Detail)", Toast.LENGTH_SHORT).show();
 
         TextView titleText = (TextView) findViewById(R.id.titleText);
-        TextView autorText = (TextView) findViewById(R.id.tvAutor);
-        TextView datumText = (TextView) findViewById(R.id.tvDatum);
-        TextView ortText = (TextView) findViewById(R.id.tvOrt);
-        TextView spracheText = (TextView) findViewById(R.id.tvSprache);
+        TextView authorText = (TextView) findViewById(R.id.tvAutor);
+        TextView dateText = (TextView) findViewById(R.id.tvDatum);
+        TextView placeText = (TextView) findViewById(R.id.tvOrt);
+        TextView languageText = (TextView) findViewById(R.id.tvSprache);
+        TextView storyText = (TextView) findViewById(R.id.mltStory);
 
         titleText.setText(ci.getTitle());
-
-        datumText.setText(ci.getRecordedDate().toString());
-        ortText.setText(ci.getPlace());
-        spracheText.setText(ci.getLanguage().toString());
+        authorText.setText(ci.getAuthor().toString());
+        dateText.setText(ci.getRecordedDate().toString());
+        placeText.setText(ci.getPlace());
+        languageText.setText(ci.getLanguage().toString());
+        storyText.setText(ci.getStory());
+        storyText.setFocusable(false);
 
     }
 }

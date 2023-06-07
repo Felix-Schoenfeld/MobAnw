@@ -31,4 +31,9 @@ public class Author implements Serializable {
     public ArrayList<Language> getLanguages() {
         return languages;
     }
+
+    @Override
+    public String toString(){
+        return this.gender.toString() + ",von " + this.minAge + "bis" + this.maxAge + "," +this.languages.toString();
+    }
 }

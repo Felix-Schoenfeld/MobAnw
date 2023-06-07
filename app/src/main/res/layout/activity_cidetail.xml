@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.537" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/mltStory"
         android:layout_width="370dp"
         android:layout_height="307dp"
         android:ems="10"
