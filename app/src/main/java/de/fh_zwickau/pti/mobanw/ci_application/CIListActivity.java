@@ -33,9 +33,16 @@ public class CIListActivity extends AppCompatActivity {
         viewCIList();;
     }
 
+    // Called by filter UI element
     protected void filterCIList() {
-        // TODO
+        // TODO lesen der filter aus der UI und anwenden
         filteredCIList = new ArrayList<>(globalCIList);
+        viewCIList();
+    }
+
+    // Called by sort UI element
+    protected void sortCIList() {
+        // TODO lesen der sortierung aus UI und anwenden
         viewCIList();
     }
 
