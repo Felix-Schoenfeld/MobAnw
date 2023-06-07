@@ -51,9 +51,8 @@ public class CIListActivity extends AppCompatActivity {
         SpannableString titleSpannable = new SpannableString(ci.getTitle());
         titleSpannable.setSpan(new RelativeSizeSpan(1.2f), 0, ci.getTitle().length(), 0); // Set large font size
 
-        // FIXME: derzeit kann die sprache der CIs nicht erkannt werden weil das einlesen nicht richtig geht weil json
-        SpannableString authorSpannable = new SpannableString("Deutsch");
-        authorSpannable.setSpan(new RelativeSizeSpan(0.8f), 0, "Deutsch".length(), 0); // Set small font size
+        SpannableString authorSpannable = new SpannableString(ci.getLanguage().toString());
+        authorSpannable.setSpan(new RelativeSizeSpan(0.8f), 0, ci.getLanguage().toString().length(), 0); // Set small font size
 
         CharSequence combinedText = TextUtils.concat(titleSpannable, "\n", authorSpannable);
 

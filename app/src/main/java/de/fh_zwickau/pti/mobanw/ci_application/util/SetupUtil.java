@@ -78,6 +78,7 @@ public class SetupUtil {
         try {
             language = Language.valueOf(languageString.toUpperCase());
         } catch (Exception e) {
+            // FIXME: sprache ist immer unknown
             switch (languageString.toLowerCase()) {
                 case ("german"):
                 case("deutsch"):
@@ -90,6 +91,7 @@ public class SetupUtil {
                 case("spanish"):
                 case("spanisch"):
                     language = Language.Spanish;
+                    break;
                 default:
                     language = Language.Unknown;
             }
