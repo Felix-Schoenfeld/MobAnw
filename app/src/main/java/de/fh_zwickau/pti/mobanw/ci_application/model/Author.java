@@ -1,8 +1,9 @@
 package de.fh_zwickau.pti.mobanw.ci_application.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Author {
+public class Author implements Serializable {
     private int minAge;
     private int maxAge;
     private Gender gender;

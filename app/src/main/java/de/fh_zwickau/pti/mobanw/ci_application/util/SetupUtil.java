@@ -17,7 +17,9 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 
+import de.fh_zwickau.pti.mobanw.ci_application.model.Author;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
+import de.fh_zwickau.pti.mobanw.ci_application.model.Gender;
 import de.fh_zwickau.pti.mobanw.ci_application.model.Language;
 
 public class SetupUtil {
@@ -56,13 +58,16 @@ public class SetupUtil {
     }
 
     private static CI ciFromJsonElement(JsonElement elem) {
+
+        // CI
+
         int id;
         String title;
         String story;
         Date recordedDate;
         Language language;
         String place;
-        String authorName = "TODO";
+        Author author;
         JsonObject json = elem.getAsJsonObject();
 
         id = Integer.valueOf(json.get("id").toString());
@@ -74,31 +79,90 @@ public class SetupUtil {
         } catch (Exception e) {
             recordedDate = new Date();
         }
-        String languageString = json.get("textStory").getAsJsonObject().get("languages").getAsJsonArray().get(0).getAsJsonObject().get("label").toString();
+        String languageString = json.get("textStory").getAsJsonObject().get("languages").getAsJsonArray().get(0).getAsJsonObject().get("language").toString();
+        language = stringToLanguage(languageString);
+
+        place = json.get("location").getAsJsonObject().get("country").getAsJsonObject().get("label").toString();
+
+        // Author
+
+        JsonObject authorJson = json.get("textStory").getAsJsonObject().get("author").getAsJsonObject();
+        int minAge;
+        int maxAge;
+        Gender gender;
+        ArrayList<Language> languages = new ArrayList<>();
+
+        Log.d("Author JSON",authorJson.toString());
+
+        try {
+            minAge = Integer.valueOf(authorJson.get("minAge").toString());
+            maxAge = Integer.valueOf(authorJson.get("maxAge").toString());
+        } catch(NumberFormatException ex) {
+            minAge = 0;
+            maxAge = 0;
+        }
+
+        String genderString = authorJson.get("gender").toString();
+        gender = stringToGender(genderString);
+
+        JsonArray nationalitiesArray = authorJson.get("nationalities").getAsJsonArray();
+        for (int i=0; i < nationalitiesArray.size(); i++) {
+            JsonObject nationality = nationalitiesArray.get(i).getAsJsonObject();
+            languages.add(stringToLanguage(nationality.get("language").toString()));
+        }
+
+
+
+        author = new Author(minAge,maxAge,gender,languages);
+
+        return new CI(id,title,story,recordedDate,language,place,author);
+    }
+
+    public static Language stringToLanguage(String languageString) {
+        Language language;
         try {
             language = Language.valueOf(languageString.toUpperCase());
         } catch (Exception e) {
-            // FIXME: sprache ist immer unknown
             switch (languageString.toLowerCase()) {
-                case ("german"):
-                case("deutsch"):
+                case("de"):
+                case("ger"):
                     language = Language.German;
                     break;
-                case("englisch"):
-                case("english"):
+                case("en"):
+                case("eng"):
                     language = Language.English;
                     break;
-                case("spanish"):
-                case("spanisch"):
+                case("sp"):
+                case("spa"):
                     language = Language.Spanish;
                     break;
                 default:
                     language = Language.Unknown;
             }
         }
-        place = json.get("location").getAsJsonObject().get("country").getAsJsonObject().get("label").toString();
+        return language;
+    }
 
-        return new CI(id,title,story,recordedDate,language,place,authorName);
+    public static Gender stringToGender(String genderString) {
+        Gender gender;
+        try {
+            gender = Gender.valueOf(genderString.toUpperCase());
+        } catch (Exception e) {
+            // FIXME: wahrscheinlich selbes problem hier wie bei language
+            switch (genderString.toLowerCase()) {
+                case ("female"):
+                case("weiblich"):
+                    gender = Gender.Female;
+                    break;
+                case("male"):
+                case("männlich"):
+                    gender = Gender.Male;
+                    break;
+                default:
+                    gender = Gender.Unknown;
+            }
+        }
+        return gender;
     }
 
     public static void ciListDebugPrint(ArrayList<CI> ciList) {
