@@ -21,6 +21,7 @@ public class CIListActivity extends AppCompatActivity {
 
     ArrayList<CI> globalCIList;
     ArrayList<CI> filteredCIList;
+    ArrayList<CI> favoriteCIList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class CIListActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             globalCIList = (ArrayList<CI>) getIntent().getSerializableExtra("globalCIList");
+            favoriteCIList = (ArrayList<CI>) getIntent().getSerializableExtra("favoriteCIList");
         }
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Listen/Suchen)", Toast.LENGTH_SHORT).show();
 
@@ -76,6 +78,7 @@ public class CIListActivity extends AppCompatActivity {
         textView.setOnClickListener( v -> {
             Intent intent = new Intent(CIListActivity.this, CIDetailActivity.class);
             intent.putExtra("selectedCI", ci);
+            intent.putExtra("favoriteCIList", favoriteCIList);
             startActivity(intent);
         });
 

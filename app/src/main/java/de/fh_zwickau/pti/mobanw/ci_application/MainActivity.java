@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         buttonCIList.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, CIListActivity.class);
             intent.putExtra("globalCIList", globalCIList);
+            intent.putExtra("favoriteCIList", favoriteCIList);
             startActivity(intent);
         });
 
