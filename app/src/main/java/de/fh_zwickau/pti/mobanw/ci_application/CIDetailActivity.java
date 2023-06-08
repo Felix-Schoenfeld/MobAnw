@@ -48,6 +48,7 @@ public class CIDetailActivity extends AppCompatActivity {
 
         if(favoriteCIList.contains(ci)) checkBoxFav.setActivated(true);
 
+        // FIXME: geht nicht :(
         checkBoxFav.setOnCheckedChangeListener((a,b) -> {
             if (checkBoxFav.isActivated() && !(favoriteCIList.contains(ci))) {
                 favoriteCIList.add(ci);
