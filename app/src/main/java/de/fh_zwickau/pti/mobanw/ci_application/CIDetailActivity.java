@@ -3,6 +3,7 @@ package de.fh_zwickau.pti.mobanw.ci_application;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,6 +15,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 public class CIDetailActivity extends AppCompatActivity {
 
     CI ci;
+    ArrayList<CI> favoriteCIList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class CIDetailActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             ci = (CI) getIntent().getSerializableExtra("selectedCI");
+            favoriteCIList = (ArrayList<CI>) getIntent().getSerializableExtra("favoriteCIList");
         }
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Detail)", Toast.LENGTH_SHORT).show();
 
@@ -33,6 +36,8 @@ public class CIDetailActivity extends AppCompatActivity {
         TextView languageText = (TextView) findViewById(R.id.tvSprache);
         TextView storyText = (TextView) findViewById(R.id.mltStory);
 
+        CheckBox checkBoxFav = (CheckBox) findViewById(R.id.checkBoxFav);
+
         titleText.setText(ci.getTitle());
         authorText.setText(ci.getAuthor().toString());
         dateText.setText(ci.getRecordedDate().toString());
@@ -40,6 +45,16 @@ public class CIDetailActivity extends AppCompatActivity {
         languageText.setText(ci.getLanguage().toString());
         storyText.setText(ci.getStory());
         storyText.setFocusable(false);
+
+        if(favoriteCIList.contains(ci)) checkBoxFav.setActivated(true);
+
+        checkBoxFav.setOnCheckedChangeListener((a,b) -> {
+            if (checkBoxFav.isActivated() && !(favoriteCIList.contains(ci))) {
+                favoriteCIList.add(ci);
+            } else if (!(checkBoxFav.isActivated()) && favoriteCIList.contains(ci)) {
+                favoriteCIList.remove(ci);
+            }
+        });
 
     }
 }
