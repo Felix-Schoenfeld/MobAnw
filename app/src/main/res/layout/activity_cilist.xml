@@ -10,7 +10,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="296dp"
         android:layout_height="323dp"
-        android:background="#463A68"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -39,27 +39,78 @@
 
     <Spinner
         android:id="@+id/filterSpinner"
-        android:layout_width="213dp"
-        android:layout_height="20dp"
+        android:layout_width="98dp"
+        android:layout_height="31dp"
         android:entries="@array/filterSpinnerItems"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.485" />
+
+    <Spinner
+        android:id="@+id/filterSpinner2"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:entries="@array/filterSpinnerItems"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.248" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="79dp"
+        android:layout_height="28dp"
         android:text="Filter"
         app:layout_constraintBottom_toBottomOf="@+id/filterSpinner"
         app:layout_constraintEnd_toStartOf="@+id/filterSpinner"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.77"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="83dp"
+        android:layout_height="26dp"
+        android:text="Sortieren"
+        app:layout_constraintBottom_toBottomOf="@+id/filterSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/filterSpinner"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <Button
+        android:id="@+id/btSort"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:text="anwenden"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Button
+        android:id="@+id/btFilter"
+        android:layout_width="92dp"
+        android:layout_height="33dp"
+        android:text="anwenden"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

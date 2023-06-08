@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.style.RelativeSizeSpan;
+import android.util.Log;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -79,5 +81,21 @@ public class CIListActivity extends AppCompatActivity {
             intent.putExtra("favoriteCIList", favoriteCIList);
             startActivity(intent);
         });
+
+        findViewById(R.id.btSort).setOnClickListener( v -> {
+            buttonOnClickSort();
+        });
+
+        findViewById(R.id.btFilter).setOnClickListener( v -> {
+            buttonOnClickFilter();
+        });
+    }
+
+    private void buttonOnClickSort(){
+        Log.d("Titel", "Sortieren");
+    }
+
+    private void buttonOnClickFilter(){
+        Log.d("Titel", "Filtern");
     }
 }
