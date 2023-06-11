@@ -54,7 +54,6 @@ public class CIDetailActivity extends AppCompatActivity {
         else
             checkBoxFav.setChecked(false);
 
-        // FIXME: geht nicht :(
         checkBoxFav.setOnCheckedChangeListener((a,b) -> {
             Log.d("CI Fav Button", "Pressed!");
             if (checkBoxFav.isChecked() && !(CIRepository.isFavorite(selectedCiId))) {
