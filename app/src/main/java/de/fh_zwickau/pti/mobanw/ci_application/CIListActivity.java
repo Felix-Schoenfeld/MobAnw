@@ -16,6 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
+import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
 
 public class CIListActivity extends AppCompatActivity {
 
@@ -27,10 +28,8 @@ public class CIListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cilist);
         Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            globalCIList = (ArrayList<CI>) getIntent().getSerializableExtra("globalCIList");
-            favoriteCIList = (ArrayList<CI>) getIntent().getSerializableExtra("favoriteCIList");
-        }
+        globalCIList = CIRepository.getGlobalCIList();
+        favoriteCIList = CIRepository.getFavCIList();
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Listen/Suchen)", Toast.LENGTH_SHORT).show();
 
         filteredCIList = new ArrayList<>(globalCIList);
@@ -77,8 +76,7 @@ public class CIListActivity extends AppCompatActivity {
         // On click
         textView.setOnClickListener( v -> {
             Intent intent = new Intent(CIListActivity.this, CIDetailActivity.class);
-            intent.putExtra("selectedCI", ci);
-            intent.putExtra("favoriteCIList", favoriteCIList);
+            intent.putExtra("selectedCiId", ci.getId());
             startActivity(intent);
         });
 
