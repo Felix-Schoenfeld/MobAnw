@@ -79,22 +79,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // FIXME: TEST
-        Button buttonUserCITest = (Button) findViewById(R.id.buttonUserCITest);
-        buttonUserCITest.setOnClickListener( v -> {
-            Date date = new Date();
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd");
-                try {
-                    date = formatter.parse("1999-1-1");
-                } catch (ParseException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-            int randomNum = ThreadLocalRandom.current().nextInt(5555, 9999 + 1);
-            CI userCI = new CI(randomNum, "USER CI TEST", "story", date, Language.German, "Hier", new Author(1,99, Gender.Unknown,new ArrayList<Language>()));
-            CIRepository.addUserCI(userCI);
-            UserCIStorage.saveCIRepositoryUserCIListToJsonFile(getApplicationContext());
-        });
     }
 }

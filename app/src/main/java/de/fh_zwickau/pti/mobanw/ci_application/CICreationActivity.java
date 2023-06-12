@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -27,7 +28,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.util.UserCIStorage;
 
 public class CICreationActivity extends AppCompatActivity {
 
-    // TODO: sollte in eigenem Menü definiert werden
+    // TODO: Autor sollte in eigenem Menü definiert werden
     Author userAuthor = new Author(18,81, Gender.Unknown, new ArrayList<>(Arrays.asList(Language.German, Language.English)));
 
     @Override
@@ -66,7 +67,11 @@ public class CICreationActivity extends AppCompatActivity {
         }
         String story = ((TextInputEditText)findViewById(R.id.textInputStory)).getText().toString();
         Language language = Language.Unknown;
-        language = Language.valueOf((String)((Spinner)findViewById(R.id.spSprache)).getSelectedItem());
+        try {
+            language = Language.valueOf((String)((Spinner)findViewById(R.id.spSprache)).getSelectedItem());
+        } catch (Exception e) {
+            Log.e("CI Creation", e.getMessage());
+        }
         String place = ((EditText)findViewById(R.id.tbOrtDesGeschehens)).getText().toString();
         Author author = userAuthor;
 
