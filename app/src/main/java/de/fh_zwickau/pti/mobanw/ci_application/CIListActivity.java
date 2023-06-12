@@ -27,13 +27,13 @@ public class CIListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cilist);
-        Bundle extras = getIntent().getExtras();
+
         globalCIList = CIRepository.getGlobalCIList();
         favoriteCIList = CIRepository.getFavCIList();
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Listen/Suchen)", Toast.LENGTH_SHORT).show();
 
         filteredCIList = new ArrayList<>(globalCIList);
-        viewCIList();;
+        viewCIList();
     }
 
     // Called by filter UI element
