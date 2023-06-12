@@ -28,13 +28,18 @@ public class FavListActivity extends AppCompatActivity {
         viewCIList();
     }
 
-    // TODO: sollte aufgerufen werden auch bei zurück button -> update nach entfernten favs
     private void viewCIList() {
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ciListLinearLayout);
         linearLayout.removeAllViews();
         for (CI ci : CIRepository.getFavCIList()) {
             addCIToUI(ci,linearLayout);
         }
+    }
+
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        viewCIList();
     }
 
     private void addCIToUI(CI ci, LinearLayout linearLayout) {
