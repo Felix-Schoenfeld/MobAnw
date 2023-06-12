@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.485" />
 
     <Spinner
-        android:id="@+id/filterSpinner2"
+        android:id="@+id/sortSpinner"
         android:layout_width="96dp"
         android:layout_height="32dp"
         android:entries="@array/sortSpinnerItems"

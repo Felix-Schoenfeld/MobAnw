@@ -16,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
@@ -35,38 +37,15 @@ public class CIListActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Listen/Suchen)", Toast.LENGTH_SHORT).show();
 
         filteredCIList = new ArrayList<>(globalCIList);
-        viewCIList();
+        displayFilteredCIList();
 
         Button buttonFilterLanguage = (Button) findViewById(R.id.btFilter);
         Button buttonSort = (Button) findViewById(R.id.btSort);
 
     }
 
-    // Called by filter UI element
-    protected void filterCIList() {
-        Spinner langFilterSpinner = (Spinner) findViewById(R.id.filterSpinner);
-        filteredCIList = (ArrayList<CI>) CIRepository.getGlobalCIList().clone();
-        String languageSelected = ((String) langFilterSpinner.getSelectedItem()).toLowerCase();
-        Log.d("Filter", "Selected: "+languageSelected);
-        if (languageSelected.equals("any")) {
-            viewCIList();
-            Log.d("Filter","None removed. Size: "+filteredCIList.size());
-        } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                filteredCIList.removeIf(c -> !c.getLanguage().toString().toLowerCase().equals(languageSelected));
-            }
-            Log.d("Filter","CIs removed. Size: "+filteredCIList.size());
-            viewCIList();
-        }
-    }
 
-    // Called by sort UI element
-    protected void sortCIList() {
-        // TODO lesen der sortierung aus UI und anwenden
-        viewCIList();
-    }
-
-    private void viewCIList() {
+    private void displayFilteredCIList() {
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ciListLinearLayout);
         linearLayout.removeAllViews();
         for (CI ci : filteredCIList) {
@@ -107,10 +86,36 @@ public class CIListActivity extends AppCompatActivity {
     }
 
     private void buttonOnClickSort(){
-        sortCIList();
+        Spinner sortSpinner = (Spinner) findViewById(R.id.sortSpinner);
+        String sortSelected = ((String) sortSpinner.getSelectedItem()).toLowerCase();
+        switch (sortSelected){
+            case "alphabet":
+                Collections.sort(filteredCIList, (ci1, ci2) -> ci1.getTitle().compareToIgnoreCase(ci2.getTitle()));
+                break;
+            case "date":
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    Collections.sort(filteredCIList, Comparator.comparing(CI::getRecordedDate));
+                }
+                break;
+        }
+
+        displayFilteredCIList();
     }
 
     private void buttonOnClickFilter(){
-        filterCIList();
+        Spinner langFilterSpinner = (Spinner) findViewById(R.id.filterSpinner);
+        filteredCIList = (ArrayList<CI>) CIRepository.getGlobalCIList().clone();
+        String languageSelected = ((String) langFilterSpinner.getSelectedItem()).toLowerCase();
+        Log.d("Filter", "Selected: "+languageSelected);
+        if (languageSelected.equals("any")) {
+            displayFilteredCIList();
+            Log.d("Filter","None removed. Size: "+filteredCIList.size());
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                filteredCIList.removeIf(c -> !c.getLanguage().toString().toLowerCase().equals(languageSelected));
+            }
+            Log.d("Filter","CIs removed. Size: "+filteredCIList.size());
+            displayFilteredCIList();
+        }
     }
 }
