@@ -147,6 +147,8 @@ public class SetupUtil {
                     break;
                 case("sp"):
                 case("spa"):
+                case("esp"):
+                case("es"):
                     language = Language.Spanish;
                     break;
                 default:

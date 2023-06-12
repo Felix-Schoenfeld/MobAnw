@@ -12,6 +12,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
 import de.fh_zwickau.pti.mobanw.ci_application.util.CIFavStorage;
 import de.fh_zwickau.pti.mobanw.ci_application.util.SetupUtil;
+import de.fh_zwickau.pti.mobanw.ci_application.util.UserCIStorage;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +37,14 @@ public class MainActivity extends AppCompatActivity {
             CIRepository.addCIToFavs(id);
         }
 
-        // TODO: Setup - Nutzer CIs
+        // Setup - Nutzer CIs
+        // TODO: ungetestet
+        if (CIRepository.getUserCIList().size() < 1) {
+            for (CI ci : UserCIStorage.loadUserCIListFromJsonFile(this.getBaseContext())) {
+                CIRepository.addUserCI(ci);
+            }
+            SetupUtil.ciListDebugPrint(CIRepository.getUserCIList());
+        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

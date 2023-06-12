@@ -6,6 +6,7 @@ public class CIRepository {
 
     static ArrayList<CI> globalCIList = new ArrayList<>();
     static ArrayList<CI> favCIList = new ArrayList<>();
+    static ArrayList<CI> userCIList = new ArrayList<>();
 
     public static void addCIGlobally(CI ci) {
         globalCIList.add(ci);
@@ -19,6 +20,14 @@ public class CIRepository {
         return favCIList;
     }
 
+    public static void addUserCI(CI ci) {
+        userCIList.add(ci);
+        globalCIList.add(ci);
+    }
+
+    public static ArrayList<CI> getUserCIList() {
+        return userCIList;
+    }
 
     public static void addCIToFavs(int id) {
         CI ci = getCIById(id);
@@ -34,6 +43,14 @@ public class CIRepository {
         CI ci = getCIById(id);
         favCIList.remove(ci);
         globalCIList.remove(ci);
+        userCIList.remove(ci);
+    }
+
+    public static void removeUserCI(int id) {
+        CI ci = getCIById(id);
+        if (getUserCIList().contains(ci)) {
+            removeCIGlobally(id);
+        }
     }
 
     public static CI getCIById(int id) {
