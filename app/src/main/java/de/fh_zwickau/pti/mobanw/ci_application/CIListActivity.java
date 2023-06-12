@@ -45,7 +45,6 @@ public class CIListActivity extends AppCompatActivity {
     // Called by filter UI element
     protected void filterCIList() {
         Spinner langFilterSpinner = (Spinner) findViewById(R.id.filterSpinner);
-        // TODO lesen der filter aus der UI und anwenden
         filteredCIList = (ArrayList<CI>) CIRepository.getGlobalCIList().clone();
         String languageSelected = ((String) langFilterSpinner.getSelectedItem()).toLowerCase();
         Log.d("Filter", "Selected: "+languageSelected);
