@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
+import de.fh_zwickau.pti.mobanw.ci_application.util.CIFavStorage;
 
 public class CIDetailActivity extends AppCompatActivity {
 
@@ -63,6 +64,7 @@ public class CIDetailActivity extends AppCompatActivity {
                 CIRepository.removeCIFromFavs(selectedCiId);
                 Log.d("CI Fav Button","CI removed");
             }
+            CIFavStorage.saveCIRepositoryFavListToJsonFile(getApplicationContext());
         });
 
     }

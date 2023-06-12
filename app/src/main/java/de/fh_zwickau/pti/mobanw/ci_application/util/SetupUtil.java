@@ -13,7 +13,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -162,7 +161,6 @@ public class SetupUtil {
         try {
             gender = Gender.valueOf(genderString.toUpperCase());
         } catch (Exception e) {
-            // FIXME: wahrscheinlich selbes problem hier wie bei language
             switch (genderString.toLowerCase()) {
                 case ("female"):
                 case("weiblich"):

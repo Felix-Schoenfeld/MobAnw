@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
+import de.fh_zwickau.pti.mobanw.ci_application.util.CIFavStorage;
 import de.fh_zwickau.pti.mobanw.ci_application.util.SetupUtil;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        // Setup
+        // Setup - Demo CIs
         if (CIRepository.getGlobalCIList().size() < 1) {
             for (CI ci : SetupUtil.loadCIListFromJson(this.getBaseContext())) {
                 CIRepository.addCIGlobally(ci);
@@ -29,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
             globalCIList = CIRepository.getGlobalCIList();
             SetupUtil.ciListDebugPrint(globalCIList);
         }
+
+        // Setup - Favoriten
+        for (Integer id : CIFavStorage.getFavIdsFromJsonFile(this.getBaseContext())) {
+            CIRepository.addCIToFavs(id);
+        }
+
+        // TODO: Setup - Nutzer CIs
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
