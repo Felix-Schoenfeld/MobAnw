@@ -27,7 +27,7 @@ public class CICreationActivity extends AppCompatActivity {
     protected void createCI() {
 
         CI ci = null; // TODO: ci erstellung implementierent
-
+        // TODO: sicherstellen, dass eine ID nicht zweimal verwendet wird
         CIRepository.addUserCI(ci);
     }
 
