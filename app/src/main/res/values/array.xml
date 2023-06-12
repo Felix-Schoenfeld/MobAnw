@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="filterSpinnerItems">
-        <item>item1</item>
-        <item>item2</item>
-        <item>item3</item>
-        <item>item4</item>
+    <string-array name="sortSpinnerItems">
+        <item>Date</item>
+        <item>Alphabet</item>
+    </string-array>
+
+    <string-array name="LanguageFilterSpinnerItems">
+        <item>Any</item>
+        <item>English</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Unknown</item>
     </string-array>
 
     <string-array name="languageSpinnerItems">
