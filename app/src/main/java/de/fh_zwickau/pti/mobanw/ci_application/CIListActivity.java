@@ -3,6 +3,7 @@ package de.fh_zwickau.pti.mobanw.ci_application;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.TextUtils;
@@ -10,6 +11,7 @@ import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,13 +36,29 @@ public class CIListActivity extends AppCompatActivity {
 
         filteredCIList = new ArrayList<>(globalCIList);
         viewCIList();
+
+        Button buttonFilterLanguage = (Button) findViewById(R.id.btFilter);
+        Button buttonSort = (Button) findViewById(R.id.btSort);
+
     }
 
     // Called by filter UI element
     protected void filterCIList() {
+        Spinner langFilterSpinner = (Spinner) findViewById(R.id.filterSpinner);
         // TODO lesen der filter aus der UI und anwenden
-        filteredCIList = new ArrayList<>(globalCIList);
-        viewCIList();
+        filteredCIList = (ArrayList<CI>) CIRepository.getGlobalCIList().clone();
+        String languageSelected = ((String) langFilterSpinner.getSelectedItem()).toLowerCase();
+        Log.d("Filter", "Selected: "+languageSelected);
+        if (languageSelected.equals("any")) {
+            viewCIList();
+            Log.d("Filter","None removed. Size: "+filteredCIList.size());
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                filteredCIList.removeIf(c -> !c.getLanguage().toString().toLowerCase().equals(languageSelected));
+            }
+            Log.d("Filter","CIs removed. Size: "+filteredCIList.size());
+            viewCIList();
+        }
     }
 
     // Called by sort UI element
@@ -90,10 +108,10 @@ public class CIListActivity extends AppCompatActivity {
     }
 
     private void buttonOnClickSort(){
-        Log.d("Titel", "Sortieren");
+        sortCIList();
     }
 
     private void buttonOnClickFilter(){
-        Log.d("Titel", "Filtern");
+        filterCIList();
     }
 }
