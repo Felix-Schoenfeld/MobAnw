@@ -40,18 +40,19 @@ public class MainActivity extends AppCompatActivity {
             SetupUtil.ciListDebugPrint(globalCIList);
         }
 
-        // Setup - Favoriten
-        for (Integer id : CIFavStorage.getFavIdsFromJsonFile(this.getBaseContext())) {
-            CIRepository.addCIToFavs(id);
-        }
-
         // Setup - Nutzer CIs
-        // TODO: ungetestet
         if (CIRepository.getUserCIList().size() < 1) {
             for (CI ci : UserCIStorage.loadUserCIListFromJsonFile(this.getBaseContext())) {
                 CIRepository.addUserCI(ci);
             }
             SetupUtil.ciListDebugPrint(CIRepository.getUserCIList());
+        }
+
+
+        // Setup - Favoriten
+        for (Integer id : CIFavStorage.getFavIdsFromJsonFile(this.getBaseContext())) {
+            // existenz überprüfen, hinzufügen
+            if (CIRepository.getCIById(id) != null) CIRepository.addCIToFavs(id);
         }
 
         super.onCreate(savedInstanceState);
