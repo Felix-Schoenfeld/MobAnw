@@ -22,10 +22,24 @@ public class CICreationActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Hallo, Welt! (Erstellen)", Toast.LENGTH_SHORT).show();
     }
 
-    // TODO: speichern von CIs
-    // anlegen: CIRepository.addUserCI(CI ci)
-    // entfernen: CIRepository.removeUserCI(int id)
-    // speichern: UserCIStorage.saveCIRepositoryUserCIListToJsonFile(getApplicationContext());
+    // TODO: UI interaktion
 
+    protected void createCI() {
+
+        CI ci = null; // TODO: ci erstellung implementierent
+
+        CIRepository.addUserCI(ci);
+    }
+
+    protected void saveCIPersistent() {
+        UserCIStorage.saveCIRepositoryUserCIListToJsonFile(getApplicationContext());
+    }
+
+    protected void deleteCI() {
+
+        int id = 0; // TODO: ci löschung implementierent (nur wenn noch zeit ist)
+
+        CIRepository.removeUserCI(id);
+    }
 
 }
