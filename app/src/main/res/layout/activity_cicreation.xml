@@ -37,6 +37,7 @@
         android:id="@+id/spSprache"
         android:layout_width="210dp"
         android:layout_height="34dp"
+        android:entries="@array/languageSpinnerItems"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.716"
