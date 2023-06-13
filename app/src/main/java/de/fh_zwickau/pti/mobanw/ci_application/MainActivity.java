@@ -1,23 +1,14 @@
 package de.fh_zwickau.pti.mobanw.ci_application;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
 import android.widget.Button;
 
-import java.text.ParseException;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.concurrent.ThreadLocalRandom;
 
-import de.fh_zwickau.pti.mobanw.ci_application.model.Author;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
-import de.fh_zwickau.pti.mobanw.ci_application.model.Gender;
-import de.fh_zwickau.pti.mobanw.ci_application.model.Language;
 import de.fh_zwickau.pti.mobanw.ci_application.util.CIFavStorage;
 import de.fh_zwickau.pti.mobanw.ci_application.util.SetupUtil;
 import de.fh_zwickau.pti.mobanw.ci_application.util.UserCIStorage;

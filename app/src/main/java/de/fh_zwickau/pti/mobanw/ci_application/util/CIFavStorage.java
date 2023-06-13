@@ -7,15 +7,10 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonParseException;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
@@ -23,7 +18,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
 
 public class CIFavStorage {
 
-    private static String favFileName = "ci-fav.json";
+    private static final String favFileName = "ci-fav.json";
 
     public static void saveCIRepositoryFavListToJsonFile(Context context) {
         ArrayList<Integer> favIds = new ArrayList<>();

@@ -7,13 +7,13 @@ import java.util.Date;
 // Jedes CI muss mindestens einen Titel, eine Geschichte, eine ID, ein Erfassungsdatum,
 // eine Sprache, den Ort des Geschehens, und Angaben zum Autor enthalten.
 public class CI implements Serializable {
-    private int id;
-    private String title;
-    private String story;
-    private Date recordedDate;
-    private Language language;
-    private String place;
-    private Author author;
+    private final int id;
+    private final String title;
+    private final String story;
+    private final Date recordedDate;
+    private final Language language;
+    private final String place;
+    private final Author author;
 
     public CI(int id, String title, String story, Date recordedDate, Language language, String place, Author author) {
         this.id = id;

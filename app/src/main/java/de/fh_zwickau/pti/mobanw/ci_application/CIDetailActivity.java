@@ -1,15 +1,10 @@
 package de.fh_zwickau.pti.mobanw.ci_application;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.CheckBox;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
@@ -28,7 +23,6 @@ public class CIDetailActivity extends AppCompatActivity {
         if (extras != null) {
             selectedCiId = getIntent().getIntExtra("selectedCiId",0);
         }
-        Toast.makeText(getApplicationContext(), "Hallo, Welt! (Detail)", Toast.LENGTH_SHORT).show();
 
         TextView titleText = (TextView) findViewById(R.id.titleText);
         TextView authorText = (TextView) findViewById(R.id.tvAutor);
@@ -50,10 +44,7 @@ public class CIDetailActivity extends AppCompatActivity {
         storyText.setFocusable(false);
 
 
-        if (CIRepository.isFavorite(selectedCiId))
-            checkBoxFav.setChecked(true);
-        else
-            checkBoxFav.setChecked(false);
+        checkBoxFav.setChecked(CIRepository.isFavorite(selectedCiId));
 
         checkBoxFav.setOnCheckedChangeListener((a,b) -> {
             Log.d("CI Fav Button", "Pressed!");

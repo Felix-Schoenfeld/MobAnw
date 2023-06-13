@@ -24,7 +24,7 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.Language;
 
 public class UserCIStorage {
 
-    private static String userCiFile = "ci-user.json";
+    private static final String userCiFile = "ci-user.json";
 
     private static JsonElement jsonElementFromCi(CI ci) {
         JsonObject ciJson = new JsonObject();

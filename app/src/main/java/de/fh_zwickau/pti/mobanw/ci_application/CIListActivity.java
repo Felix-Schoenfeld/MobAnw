@@ -1,7 +1,6 @@
 package de.fh_zwickau.pti.mobanw.ci_application;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,7 +12,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,7 +32,6 @@ public class CIListActivity extends AppCompatActivity {
 
         globalCIList = CIRepository.getGlobalCIList();
         favoriteCIList = CIRepository.getFavCIList();
-        Toast.makeText(getApplicationContext(), "Hallo, Welt! (Listen/Suchen)", Toast.LENGTH_SHORT).show();
 
         filteredCIList = new ArrayList<>(globalCIList);
         displayFilteredCIList();
