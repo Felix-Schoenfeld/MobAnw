@@ -7,7 +7,7 @@
     tools:context=".AuthorProfileActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSaveAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="498dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cancel"
@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="501dp" />
 
     <EditText
-        android:id="@+id/editTextNumberSigned"
+        android:id="@+id/editTextAgeMin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="91dp" />
 
     <EditText
-        android:id="@+id/editTextNumberSigned2"
+        android:id="@+id/editTextAgeMax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,7 +57,7 @@
         tools:layout_editor_absoluteY="170dp" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spGender"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="76dp"
@@ -73,7 +73,7 @@
         tools:layout_editor_absoluteY="226dp" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbEnglish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="speaks english"
@@ -81,7 +81,7 @@
         tools:layout_editor_absoluteY="273dp" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cbGerman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="speaks german"
@@ -89,7 +89,7 @@
         tools:layout_editor_absoluteY="318dp" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cbSpanish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="speaks spanish"
