@@ -6,10 +6,26 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Author implements Serializable {
-    private final int minAge;
-    private final int maxAge;
-    private final Gender gender;
-    private final ArrayList<Language> languages;
+    public void setMinAge(int minAge) {
+        this.minAge = minAge;
+    }
+
+    public void setMaxAge(int maxAge) {
+        this.maxAge = maxAge;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public void setLanguages(ArrayList<Language> languages) {
+        this.languages = languages;
+    }
+
+    private int minAge;
+    private int maxAge;
+    private Gender gender;
+    private ArrayList<Language> languages;
 
     public Author(int minAge, int maxAge, Gender gender, ArrayList<Language> languages) {
         this.minAge = minAge;
