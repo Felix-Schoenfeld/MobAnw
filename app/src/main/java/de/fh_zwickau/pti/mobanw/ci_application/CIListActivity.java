@@ -38,7 +38,6 @@ public class CIListActivity extends AppCompatActivity {
         displayFilteredCIList();
 
         Button buttonFilterLanguage = (Button) findViewById(R.id.btFilter);
-        Button buttonSort = (Button) findViewById(R.id.btSort);
 
     }
 
@@ -74,33 +73,13 @@ public class CIListActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        findViewById(R.id.btSort).setOnClickListener( v -> {
-            buttonOnClickSort();
-        });
-
         findViewById(R.id.btFilter).setOnClickListener( v -> {
             buttonOnClickFilter();
         });
     }
 
-    private void buttonOnClickSort(){
-        Spinner sortSpinner = (Spinner) findViewById(R.id.sortSpinner);
-        String sortSelected = ((String) sortSpinner.getSelectedItem()).toLowerCase();
-        switch (sortSelected){
-            case "alphabet":
-                Collections.sort(filteredCIList, (ci1, ci2) -> ci1.getTitle().compareToIgnoreCase(ci2.getTitle()));
-                break;
-            case "date":
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                    Collections.sort(filteredCIList, Comparator.comparing(CI::getRecordedDate));
-                }
-                break;
-        }
-
-        displayFilteredCIList();
-    }
-
     private void buttonOnClickFilter(){
+        // filter
         Spinner langFilterSpinner = (Spinner) findViewById(R.id.filterSpinner);
         filteredCIList = (ArrayList<CI>) CIRepository.getGlobalCIList().clone();
         String languageSelected = ((String) langFilterSpinner.getSelectedItem()).toLowerCase();
@@ -123,6 +102,22 @@ public class CIListActivity extends AppCompatActivity {
             Log.d("Filter","CIs removed. Size: "+filteredCIList.size());
             displayFilteredCIList();
         }
+
+
+        // sort
+        Spinner sortSpinner = (Spinner) findViewById(R.id.sortSpinner);
+        String sortSelected = ((String) sortSpinner.getSelectedItem()).toLowerCase();
+        switch (sortSelected){
+            case "alphabet":
+                Collections.sort(filteredCIList, (ci1, ci2) -> ci1.getTitle().compareToIgnoreCase(ci2.getTitle()));
+                break;
+            case "date":
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    Collections.sort(filteredCIList, Comparator.comparing(CI::getRecordedDate));
+                }
+                break;
+        }
+        displayFilteredCIList();
     }
 
     @Override
