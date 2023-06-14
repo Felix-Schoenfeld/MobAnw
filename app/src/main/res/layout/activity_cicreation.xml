@@ -78,7 +78,7 @@
         android:id="@+id/textView5"
         android:layout_width="140dp"
         android:layout_height="30dp"
-        android:text="CI - Erfassen"
+        android:text="CI Creation"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTitle"
         app:layout_constraintEnd_toEndOf="parent"
