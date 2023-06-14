@@ -27,7 +27,7 @@ public class AuthorProfileActivity extends AppCompatActivity {
         editTextAgeMin.setText(""+author.getMinAge());
 
         EditText editTextAgeMax = (EditText) findViewById(R.id.editTextAgeMax);
-        editTextAgeMin.setText(""+author.getMaxAge());
+        editTextAgeMax.setText(""+author.getMaxAge());
 
         Spinner spGender = (Spinner) findViewById(R.id.spGender);
         try {
