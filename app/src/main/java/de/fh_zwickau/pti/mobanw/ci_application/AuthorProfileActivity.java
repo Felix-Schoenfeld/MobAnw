@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -31,7 +32,13 @@ public class AuthorProfileActivity extends AppCompatActivity {
 
         Spinner spGender = (Spinner) findViewById(R.id.spGender);
         try {
-            // TODO: gender Auswählen
+            String authorGender = author.getGender().toString();
+            ArrayAdapter<String> adapter = (ArrayAdapter<String>) spGender.getAdapter();
+
+            int position = adapter.getPosition(authorGender);
+            if (position != -1) {
+                spGender.setSelection(position);
+            }
         } catch (Exception e) {
             Log.e("Load Author", author.getGender().toString()+" not found in spGender");
         }
