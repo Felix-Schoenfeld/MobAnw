@@ -24,6 +24,16 @@ import de.fh_zwickau.pti.mobanw.ci_application.model.Language;
 
 public class UserCIStorage {
 
+    public static Author getUserAuthor() {
+        return userAuthor;
+    }
+
+    public static void setUserAuthor(Author userAuthor) {
+        UserCIStorage.userAuthor = userAuthor;
+    }
+
+    // FIXME: sollte einen standard-wert haben. festlegen in main activity? oder hier
+    private static Author userAuthor;
     private static final String userCiFile = "ci-user.json";
 
     private static JsonElement jsonElementFromCi(CI ci) {

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -27,9 +28,6 @@ import de.fh_zwickau.pti.mobanw.ci_application.util.UserCIStorage;
 
 public class CICreationActivity extends AppCompatActivity {
 
-    // TODO: Autor sollte in eigenem Menü definiert werden
-    Author userAuthor = new Author(18,81, Gender.Unknown, new ArrayList<>(Arrays.asList(Language.German, Language.English)));
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +36,22 @@ public class CICreationActivity extends AppCompatActivity {
         Button btnConfirm = findViewById(R.id.btnConfirm);
         btnConfirm.setOnClickListener( event -> {
             try {
-                CI ci = createCI();
-                saveCIsPersistent();
-                // TODO: clear data here
-                // switch to created ci
-                Intent intent = new Intent(CICreationActivity.this, CIDetailActivity.class);
-                intent.putExtra("selectedCiId", ci.getId());
-                startActivity(intent);
+                CI ci = createCI(); // TODO: sollte so fehlschlagen, dass der nutzer das mitgeteilt bekommt (toast?)
+                if (ci != null) {
+                    saveCIsPersistent();
+
+                    // clearing data
+                    ((EditText)findViewById(R.id.editTextTitle)).setText("");
+                    ((EditText)findViewById(R.id.dateErfassungsdatum)).setText("");
+                    ((TextInputEditText)findViewById(R.id.textInputStory)).setText("");
+                    ((Spinner)findViewById(R.id.spSprache)).setSelection(0);
+                    ((EditText)findViewById(R.id.tbOrtDesGeschehens)).setText("");
+
+                    // switch to created ci
+                    Intent intent = new Intent(CICreationActivity.this, CIDetailActivity.class);
+                    intent.putExtra("selectedCiId", ci.getId());
+                    startActivity(intent);
+                }
             } catch (ParseException e) {
                 throw new RuntimeException(e);
             }
@@ -60,7 +67,12 @@ public class CICreationActivity extends AppCompatActivity {
         try {
             recordedDate = formatter.parse(((EditText) findViewById(R.id.dateErfassungsdatum)).getText().toString());
         } catch (Exception e) {
-            recordedDate = new Date();
+            recordedDate = null;
+        }
+        if (recordedDate == null) {
+            // DATUM FALSCH EINGEGEBEN
+            Toast.makeText(this, "Datum bitte eingeben als dd.mm.yyyy", Toast.LENGTH_LONG).show();
+            return null;
         }
         String story = ((TextInputEditText)findViewById(R.id.textInputStory)).getText().toString();
         Language language = Language.Unknown;
@@ -70,7 +82,7 @@ public class CICreationActivity extends AppCompatActivity {
             Log.e("CI Creation", e.getMessage());
         }
         String place = ((EditText)findViewById(R.id.tbOrtDesGeschehens)).getText().toString();
-        Author author = userAuthor;
+        Author author = UserCIStorage.getUserAuthor();
 
         CI ci = new CI(id, title, story, recordedDate, language, place, author);
 
