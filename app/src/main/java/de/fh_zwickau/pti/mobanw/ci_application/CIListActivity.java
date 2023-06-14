@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -103,6 +104,14 @@ public class CIListActivity extends AppCompatActivity {
         Spinner langFilterSpinner = (Spinner) findViewById(R.id.filterSpinner);
         filteredCIList = (ArrayList<CI>) CIRepository.getGlobalCIList().clone();
         String languageSelected = ((String) langFilterSpinner.getSelectedItem()).toLowerCase();
+
+        CheckBox yourCis = (CheckBox) findViewById(R.id.cbYourCIs);
+        if (yourCis.isChecked()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                filteredCIList.removeIf(c -> !CIRepository.getUserCIList().contains(c));
+            }
+        }
+
         Log.d("Filter", "Selected: "+languageSelected);
         if (languageSelected.equals("any")) {
             displayFilteredCIList();
