@@ -12,6 +12,7 @@ import android.widget.TextView;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CI;
 import de.fh_zwickau.pti.mobanw.ci_application.model.CIRepository;
 import de.fh_zwickau.pti.mobanw.ci_application.util.CIFavStorage;
+import de.fh_zwickau.pti.mobanw.ci_application.util.UserCIStorage;
 
 public class CIDetailActivity extends AppCompatActivity {
 
@@ -72,6 +73,7 @@ public class CIDetailActivity extends AppCompatActivity {
         }
         btnDeleteCI.setOnClickListener(event -> {
             CIRepository.removeCIGlobally(ci.getId());
+            UserCIStorage.saveCIRepositoryUserCIListToJsonFile(getApplicationContext());
             finish();
         });
 

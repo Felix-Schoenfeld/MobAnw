@@ -118,11 +118,5 @@ public class CICreationActivity extends AppCompatActivity {
         UserCIStorage.saveCIRepositoryUserCIListToJsonFile(getApplicationContext());
     }
 
-    protected void deleteCI() {
-
-        int id = 0; // TODO: ci löschung implementierent (nur wenn noch zeit ist)
-
-        CIRepository.removeUserCI(id);
-    }
 
 }

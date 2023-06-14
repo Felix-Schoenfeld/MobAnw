@@ -115,4 +115,11 @@ public class CIListActivity extends AppCompatActivity {
             displayFilteredCIList();
         }
     }
+
+    @Override
+    public void onRestart() {
+        filteredCIList = globalCIList;
+        super.onRestart();
+        displayFilteredCIList();
+    }
 }
