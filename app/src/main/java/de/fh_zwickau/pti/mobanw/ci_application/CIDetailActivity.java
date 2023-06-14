@@ -1,8 +1,11 @@
 package de.fh_zwickau.pti.mobanw.ci_application;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -57,6 +60,21 @@ public class CIDetailActivity extends AppCompatActivity {
             }
             CIFavStorage.saveCIRepositoryFavListToJsonFile(getApplicationContext());
         });
+
+        Button btnDeleteCI = (Button)findViewById(R.id.btnDeleteCi);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            if (CIRepository.getUserCIList().stream().filter(c -> c.getId() == ci.getId()).count() > 0) {
+                btnDeleteCI.setEnabled(true);
+            } else {
+                btnDeleteCI.setEnabled(false);
+            }
+        }
+        btnDeleteCI.setOnClickListener(event -> {
+            CIRepository.removeCIGlobally(ci.getId());
+            finish();
+        });
+
 
     }
 }
