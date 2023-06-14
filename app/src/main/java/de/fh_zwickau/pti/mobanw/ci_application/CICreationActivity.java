@@ -36,7 +36,7 @@ public class CICreationActivity extends AppCompatActivity {
         Button btnConfirm = findViewById(R.id.btnConfirm);
         btnConfirm.setOnClickListener( event -> {
             try {
-                CI ci = createCI(); // TODO: sollte so fehlschlagen, dass der nutzer das mitgeteilt bekommt (toast?)
+                CI ci = createCI();
                 if (ci != null) {
                     saveCIsPersistent();
 
